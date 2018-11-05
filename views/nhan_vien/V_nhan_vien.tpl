@@ -38,16 +38,16 @@
                         <tbody>
                         {foreach $arr as $item}
                             <tr>
-                                <td>{$item->id}</td>
-                                <td>{$item->ten_nhanvien}</td>
-                                <td>{($item->phai == 1)?"Nữ":"Nam"}</td>
-                                <td><a href="mailto:{$item->email}">{$item->email}</a></td>
-                                <td>{$item->dia_chi}</td>
-                                <td>{$item->ngay_sinh}</td>
-                                <td>{$item->so_dienthoai}</td>
+                                <td>{$item['id']}</td>
+                                <td>{$item['ten_nhanvien']}</td>
+                                <td>{($item['phai'] == 1)?"Nữ":"Nam"}</td>
+                                <td><a href="mailto:{$item['email']}">{$item['email']}</a></td>
+                                <td>{$item['dia_chi']}</td>
+                                <td>{$item['ngay_sinh']}</td>
+                                <td>{$item['so_dienthoai']}</td>
                                 <td class="text-right">
-                                    <a href="/nhanvien.php?action=xem&id={$item->id}" class="btn btn-simple btn-info btn-icon like">Xem</a>
-                                    <a href="/nhanvien.php?action=xoa&id={$item->id}" class="btn btn-simple btn-danger btn-icon remove">Xoá</a>
+                                    <a href="/nhanvien.php?action=xem&id={$item['id']}" class="btn btn-simple btn-info btn-icon like">Xem</a>
+                                    <a href="/nhanvien.php?action=xoa&id={$item['id']}" class="btn btn-simple btn-danger btn-icon remove">Xoá</a>
                                 </td>
                             </tr>
                         {/foreach}

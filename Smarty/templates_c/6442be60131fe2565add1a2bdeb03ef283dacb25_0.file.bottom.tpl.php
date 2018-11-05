@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-04 17:35:37
+/* Smarty version 3.1.33, created on 2018-11-05 14:14:51
   from 'E:\QL Sach\Smarty\templates\bottom.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bdf2de97becb2_07305836',
+  'unifunc' => 'content_5be0505b98c837_77774886',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6442be60131fe2565add1a2bdeb03ef283dacb25' => 
     array (
       0 => 'E:\\QL Sach\\Smarty\\templates\\bottom.tpl',
-      1 => 1541352665,
+      1 => 1541427288,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bdf2de97becb2_07305836 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be0505b98c837_77774886 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!--   Core JS Files   -->
 <?php echo '<script'; ?>
@@ -75,10 +75,6 @@ function content_5bdf2de97becb2_07305836 (Smarty_Internal_Template $_smarty_tpl)
 <?php echo '<script'; ?>
  src="../assets/js/nouislider.min.js"><?php echo '</script'; ?>
 >
-<!--  Google Maps Plugin    -->
-<?php echo '<script'; ?>
- type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"><?php echo '</script'; ?>
->
 <!--  Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
 <?php echo '<script'; ?>
  src="../assets/js/jquery.select-bootstrap.js"><?php echo '</script'; ?>
@@ -107,6 +103,8 @@ function content_5bdf2de97becb2_07305836 (Smarty_Internal_Template $_smarty_tpl)
 <?php echo '<script'; ?>
  src="../assets/js/material-dashboard.js?v=1.2.1"><?php echo '</script'; ?>
 >
-
+<?php echo '<script'; ?>
+ src="../../assets/js/custom.js"><?php echo '</script'; ?>
+>
 </html><?php }
 }

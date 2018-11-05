@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-04 21:07:22
+/* Smarty version 3.1.33, created on 2018-11-05 18:31:14
   from 'E:\QL Sach\views\nhan_vien\V_nhan_vien.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bdf5f8ab0f241_61294678',
+  'unifunc' => 'content_5be08c725c9067_04509935',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8d549aa4c46784d83bbb9bc02ab2e040017b4037' => 
     array (
       0 => 'E:\\QL Sach\\views\\nhan_vien\\V_nhan_vien.tpl',
-      1 => 1541365641,
+      1 => 1541442673,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bdf5f8ab0f241_61294678 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be08c725c9067_04509935 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -65,25 +65,25 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 ?>
                             <tr>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value->id;?>
+                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 </td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value->ten_nhanvien;?>
+                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ten_nhanvien'];?>
 </td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value->phai == 1 ? "Nữ" : "Nam";?>
+                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['phai'] == 1 ? "Nữ" : "Nam";?>
 </td>
-                                <td><a href="mailto:<?php echo $_smarty_tpl->tpl_vars['item']->value->email;?>
-"><?php echo $_smarty_tpl->tpl_vars['item']->value->email;?>
+                                <td><a href="mailto:<?php echo $_smarty_tpl->tpl_vars['item']->value['email'];?>
+"><?php echo $_smarty_tpl->tpl_vars['item']->value['email'];?>
 </a></td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value->dia_chi;?>
+                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['dia_chi'];?>
 </td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value->ngay_sinh;?>
+                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ngay_sinh'];?>
 </td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value->so_dienthoai;?>
+                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['so_dienthoai'];?>
 </td>
                                 <td class="text-right">
-                                    <a href="/nhanvien.php?action=xem&id=<?php echo $_smarty_tpl->tpl_vars['item']->value->id;?>
+                                    <a href="/nhanvien.php?action=xem&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 " class="btn btn-simple btn-info btn-icon like">Xem</a>
-                                    <a href="/nhanvien.php?action=xoa&id=<?php echo $_smarty_tpl->tpl_vars['item']->value->id;?>
+                                    <a href="/nhanvien.php?action=xoa&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 " class="btn btn-simple btn-danger btn-icon remove">Xoá</a>
                                 </td>
                             </tr>

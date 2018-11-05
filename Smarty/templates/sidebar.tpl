@@ -57,7 +57,7 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 </a>
             </li>
             <li class="active">
-                <a href="nhanvien.php">
+                <a href="/nhanvien.php">
                     <i class="material-icons">person</i>
                     <p> Nhân Viên </p>
                 </a>

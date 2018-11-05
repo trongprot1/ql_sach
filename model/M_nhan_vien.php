@@ -2,53 +2,40 @@
 
 include("database.php");
 
-class M_nhan_vien extends database
+class M_nhan_vien extends Database
 {
     function Doc_Tat_Ca_Nhan_Vien()
     {
         $sql = "select * from nhan_vien";
-        $this->setQuery($sql);
-        return $this->loadAllRows();
+        return $this->getData($sql);;
     }
 
     function Doc_Nhan_Vien_Theo_Id($id)
     {
-        $sql = "select * from nhan_vien where id=?";
-        $this->setQuery($sql);
-        return $this->loadRow(array($id));
+        $sql = "select * from nhan_vien where id='$id'";
+        return $this->getData($sql);
     }
 
-    function Them($data)
+    function Them($ten_nhanvien, $phai, $email, $dia_chi, $ngay_sinh, $dien_thoai, $ghi_chu, $images)
     {
-        $ten_nhanvien = $data['ten_nhan_vien'];
-        $phai = $data['phai'];
-        $email = $data['email'];
-        $dia_chi = $data['dia_chi'];
-        $ngay_sinh = $data['ngay_sinh'];
-        $dien_thoai = $data['dien_thoai'];
-        $ghi_chu = $data['ghi_chu'];
-
-        $sql = "INSERT INTO nhan_vien ";
-        $sql .= "VALUES (?,?,?,?,?,?,?,?)";
-        $this->setQuery($sql);
-        $param = array('NULL', $ten_nhanvien, $phai, $email, $dia_chi, $ngay_sinh, $dien_thoai, $ghi_chu);
-        return $this->execute($param);
+        $images = ($images != "") ? ($images) : "../assets/img/faces/avatar.jpg";
+        $sql = "Insert Into nhan_vien(id,ten_nhanvien,phai,email,dia_chi,ngay_sinh,so_dienthoai,ghi_chu,images) values ( NULL ,'$ten_nhanvien', '$phai','$email','$dia_chi','$ngay_sinh','$dien_thoai','$ghi_chu','$images')";
+        return $this->exe($sql);
     }
 
-    function Sua($ten_nhanvien, $phai, $email, $dia_chi, $ngay_sinh, $dien_thoai, $ghi_chu, $id)
+    function Sua($ten_nhanvien, $phai, $email, $dia_chi, $ngay_sinh, $dien_thoai, $ghi_chu, $images, $id)
     {
         $sql = "UPDATE nhan_vien ";
-        $sql .= "SET ten_nhanvien=? ,  phai=? ,  email=? ,  dia_chi=? , ngay_sinh=? ,  so_dienthoai=? ,  ghi_chu=? ";
+        $sql .= "SET ten_nhanvien=? ,  phai=? ,  email=? ,  dia_chi=? , ngay_sinh=? ,  so_dienthoai=? ,  ghi_chu=? , images=? ";
         $sql .= " WHERE id=?";
         $this->setQuery($sql);
-        $param = array($ten_nhanvien, $phai, $email, $dia_chi, $ngay_sinh, $dien_thoai, $ghi_chu, $id);
+        $param = array($ten_nhanvien, $phai, $email, $dia_chi, $ngay_sinh, $dien_thoai, $ghi_chu, $images, $id);
         return $this->execute($param);
     }
 
     function Xoa($id)
     {
-        $sql = "delete from nhan_vien where id=?";
-        $this->setQuery($sql);
-        return $this->execute(array($id));
+        $tbl = "nhan_vien";
+        return $this->delete($id, $tbl);
     }
 }
