@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba9cd9a2-c009-4c2f-9dd3-275bbe9feca8" name="Default Changelist" comment="" />
+    <list default="true" id="ba9cd9a2-c009-4c2f-9dd3-275bbe9feca8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smarty/templates/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/Smarty/templates/sidebar.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smarty/templates_c/c2262f89a72ae7a6433f5b661d40e1e47fbbd591_0.file.sidebar.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/Smarty/templates_c/c2262f89a72ae7a6433f5b661d40e1e47fbbd591_0.file.sidebar.tpl.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/Smarty/composer.json</pharConfigPath>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1808334937">
@@ -14,35 +21,36 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
           <entry key="php" value="34" />
-          <entry key="tpl" value="26" />
+          <entry key="tpl" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="PHP" value="34" />
-          <entry key="Smarty" value="26" />
+          <entry key="Smarty" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="30" />
           <entry key="php" value="1698" />
-          <entry key="tpl" value="936" />
+          <entry key="tpl" value="1067" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PHP" value="1698" />
           <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Smarty" value="936" />
+          <entry key="Smarty" value="1067" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -53,12 +61,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/C_Nhan_Vien.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+              <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
               <folding>
                 <element signature="n#C_Nhan_Vien#0;n#!!top" />
                 <element signature="n#Hien_Thi_Tat_Ca_Nhan_Vien#0;n#C_Nhan_Vien#0;n#!!top" />
@@ -68,11 +76,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/nhan_vien/V_nhan_vien.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="267">
-              <caret line="52" column="34" lean-forward="true" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+              <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Smarty/templates/sidebar.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="95" column="35" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -100,6 +117,9 @@
       <replace>nhan_vien</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -123,13 +143,13 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/model/M_Nhan_Vien.php" />
         <option value="$PROJECT_DIR$/model/database.php" />
-        <option value="$PROJECT_DIR$/Smarty/templates/sidebar.tpl" />
         <option value="$PROJECT_DIR$/views/nhan_vien/V_sua_nhan_vien.tpl" />
         <option value="$PROJECT_DIR$/model/M_nhan_vien.php" />
         <option value="$PROJECT_DIR$/views/nhan_vien/V_them_nhan_vien.tpl" />
         <option value="$PROJECT_DIR$/nhanvien.php" />
         <option value="$PROJECT_DIR$/controllers/C_Nhan_Vien.php" />
         <option value="$PROJECT_DIR$/views/nhan_vien/V_nhan_vien.tpl" />
+        <option value="$PROJECT_DIR$/Smarty/templates/sidebar.tpl" />
       </list>
     </option>
   </component>
@@ -166,6 +186,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -177,6 +198,17 @@
             <path>
               <item name="QL Sach" type="b2602c69:ProjectViewProjectNode" />
               <item name="QL Sach" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QL Sach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QL Sach" type="462c0819:PsiDirectoryNode" />
+              <item name="Smarty" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QL Sach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QL Sach" type="462c0819:PsiDirectoryNode" />
+              <item name="Smarty" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="QL Sach" type="b2602c69:ProjectViewProjectNode" />
@@ -235,18 +267,19 @@
       <option name="presentableId" value="Default" />
       <updated>1541333934028</updated>
       <workItem from="1541333935513" duration="21937000" />
+      <workItem from="1541395071234" duration="277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21937000" />
+    <option name="totallyTimeSpent" value="22214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -294,13 +327,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php" />
     <entry file="file://$PROJECT_DIR$/Smarty/libs/Autoloader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-909">
@@ -311,20 +338,8 @@
     <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Smarty/templates/js.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Smarty/templates/js.tpl" />
+    <entry file="file://$PROJECT_DIR$/controllers/index.php" />
     <entry file="file://$PROJECT_DIR$/Smarty/libs/sysplugins/smarty_internal_data.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -364,9 +379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding>
-            <element signature="e#938#944#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -386,11 +398,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Smarty/templates/navbar.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <folding>
-            <element signature="n#li#0;n#ul#0;n#div#2;n#div#0;n#nav#0;n#!!top" />
-          </folding>
-        </state>
+        <state relative-caret-position="-255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Smarty/templates/top.tpl">
@@ -404,13 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Smarty/templates/sidebar.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -452,7 +453,7 @@
     <entry file="file://$PROJECT_DIR$/controllers/C_Nhan_Vien.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+          <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
           <folding>
             <element signature="n#C_Nhan_Vien#0;n#!!top" />
             <element signature="n#Hien_Thi_Tat_Ca_Nhan_Vien#0;n#C_Nhan_Vien#0;n#!!top" />
@@ -464,7 +465,14 @@
     <entry file="file://$PROJECT_DIR$/views/nhan_vien/V_nhan_vien.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
-          <caret line="52" column="34" lean-forward="true" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smarty/templates/sidebar.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="95" column="35" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="35" />
         </state>
       </provider>
     </entry>
