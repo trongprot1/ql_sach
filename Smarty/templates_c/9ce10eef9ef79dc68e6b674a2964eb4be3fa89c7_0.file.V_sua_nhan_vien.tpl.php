@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-05 19:41:13
+/* Smarty version 3.1.33, created on 2018-11-06 17:57:40
   from 'E:\QL Sach\views\nhan_vien\V_sua_nhan_vien.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be09cd9d40067_72040894',
+  'unifunc' => 'content_5be1d614767435_73061477',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9ce10eef9ef79dc68e6b674a2964eb4be3fa89c7' => 
     array (
       0 => 'E:\\QL Sach\\views\\nhan_vien\\V_sua_nhan_vien.tpl',
-      1 => 1541446872,
+      1 => 1541507857,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be09cd9d40067_72040894 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be1d614767435_73061477 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
@@ -34,10 +34,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <i class="material-icons">perm_identity</i>
             </div>
             <div class="card-content">
-                <h4 class="card-title">Thêm Mới -
+                <h4 class="card-title">Chi Tiết -
                     <small class="category">Nhân Viên</small>
                 </h4>
-                <form action="/nhanvien.php/?action=sua&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+                <form action="/nhanvien.php/?action=capnhat&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 " method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-5">
@@ -120,7 +120,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                         </div>
                     </div>
                     <a href="/nhanvien.php" class="btn btn-primary">Quay Lại<div class="ripple-container"></div></a>
-                    <button type="submit" class="btn btn-rose pull-right">Sửa</button>
+                    <button type="submit" class="btn btn-rose pull-right">Cập Nhật</button>
                     <div class="clearfix"></div>
                 </form>
             </div>

@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <a href="/tacgia.php" class="btn btn-primary">Quay Lại<div class="ripple-container"></div></a>
-                <button type="submit" class="btn btn-rose pull-right">Thêm Mới</button>
+                <button type="submit" class="btn btn-rose pull-right">Cập Nhật</button>
                 <div class="clearfix"></div>
             </form>
         </div>

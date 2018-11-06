@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-06 18:22:54
-  from 'E:\QL Sach\views\nhan_vien\V_nhan_vien.tpl' */
+/* Smarty version 3.1.33, created on 2018-11-06 16:32:10
+  from 'E:\QL Sach\views\the_loai\V_the_loai.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be1dbfe241ff2_74550097',
+  'unifunc' => 'content_5be1c20acf2c53_60131865',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '8d549aa4c46784d83bbb9bc02ab2e040017b4037' => 
+    'dc1c439e216adf16df071d74ad748f39c1659e58' => 
     array (
-      0 => 'E:\\QL Sach\\views\\nhan_vien\\V_nhan_vien.tpl',
-      1 => 1541528572,
+      0 => 'E:\\QL Sach\\views\\the_loai\\V_the_loai.tpl',
+      1 => 1541521918,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be1dbfe241ff2_74550097 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be1c20acf2c53_60131865 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -28,33 +28,24 @@ function content_5be1dbfe241ff2_74550097 (Smarty_Internal_Template $_smarty_tpl)
                 <i class="material-icons">person</i>
             </div>
             <div class="card-content">
-                <h4 class="card-title">Danh Sách Nhân Viên</h4>
+                <h4 class="card-title">Danh Sách <?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</h4>
                 <div class="toolbar">
-                    <a href="/nhanvien.php/?action=them" class="btn btn-success">Thêm<div class="ripple-container"></div></a>
+                    <a href="/theloai.php/?action=them" class="btn btn-success">Thêm<div class="ripple-container"></div></a>
                 </div>
                 <div class="material-datatables">
                     <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                         <thead>
                         <tr>
                             <th>Id</th>
-                            <th>Tên Nhân Viên</th>
-                            <th>Phái</th>
-                            <th>Email</th>
-                            <th>Địa Chỉ</th>
-                            <th>Ngày Sinh</th>
-                            <th>Số Điện Thoại</th>
+                            <th>Tên Thể Loại</th>
                             <th class="disabled-sorting text-right">Actions</th>
                         </tr>
                         </thead>
                         <tfoot>
                         <tr>
                             <th>Id</th>
-                            <th>Tên Nhân Viên</th>
-                            <th>Phái</th>
-                            <th>Email</th>
-                            <th>Địa Chỉ</th>
-                            <th>Ngày Sinh</th>
-                            <th>Số Điện Thoại</th>
+                            <th>Tên Thể Loại</th>
                             <th class="disabled-sorting text-right">Actions</th>
                         </tr>
                         </tfoot>
@@ -67,23 +58,12 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
                             <tr>
                                 <td><?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 </td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ten_nhanvien'];?>
-</td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['phai'] == 1 ? "Nữ" : "Nam";?>
-</td>
-                                <td><a href="mailto:<?php echo $_smarty_tpl->tpl_vars['item']->value['email'];?>
-"><?php echo $_smarty_tpl->tpl_vars['item']->value['email'];?>
-</a></td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['dia_chi'];?>
-</td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ngay_sinh'];?>
-</td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['so_dienthoai'];?>
+                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ten_theloai'];?>
 </td>
                                 <td class="text-right">
-                                    <a href="/nhanvien.php?action=xem&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+                                    <a href="/theloai.php?action=xem&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 " class="btn btn-simple btn-info btn-icon like">Xem</a>
-                                    <a href="/nhanvien.php?action=xoa&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+                                    <a href="/theloai.php?action=xoa&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 " class="btn btn-simple btn-danger btn-icon remove">Xoá</a>
                                 </td>
                             </tr>
