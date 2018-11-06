@@ -1,4 +1,27 @@
-<div class="sidebar" data-active-color="rose" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
+<?php
+/* Smarty version 3.1.33, created on 2018-11-06 10:24:40
+  from 'F:\ql_sach\Smarty\templates\sidebar.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5be16be82f14a5_29887594',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7c8f6a46675c1d8cceec9559ed640689a8f07341' => 
+    array (
+      0 => 'F:\\ql_sach\\Smarty\\templates\\sidebar.tpl',
+      1 => 1541499877,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5be16be82f14a5_29887594 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="sidebar" data-active-color="rose" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
     <!--
 Tip 1: You can change the color of active element of the sidebar using: data-active-color="purple | blue | green | orange | red | rose"
 Tip 2: you can also add an image using data-image tag
@@ -106,4 +129,5 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
             </li>
         </ul>
     </div>
-</div>
+</div><?php }
+}

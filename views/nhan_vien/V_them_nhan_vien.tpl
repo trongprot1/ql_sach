@@ -6,7 +6,7 @@
             </div>
             <div class="card-content">
                 <h4 class="card-title">Thêm Mới -
-                    <small class="category">Nhân Viên</small>
+                    <small class="category">{$title}</small>
                 </h4>
                 <form action="/nhanvien.php/?action=themmoi" method="post" enctype="multipart/form-data">
                     <div class="row">

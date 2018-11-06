@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th10 05, 2018 lúc 05:12 AM
--- Phiên bản máy phục vụ: 5.7.23
--- Phiên bản PHP: 7.1.22
+-- Thời gian đã tạo: Th10 06, 2018 lúc 11:09 AM
+-- Phiên bản máy phục vụ: 5.7.21
+-- Phiên bản PHP: 5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -82,16 +82,16 @@ CREATE TABLE IF NOT EXISTS `muon_tra` (
 DROP TABLE IF EXISTS `nhan_vien`;
 CREATE TABLE IF NOT EXISTS `nhan_vien` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `ten_nhanvien` varchar(255) NOT NULL,
-  `phai` tinyint(4) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `dia_chi` text NOT NULL,
-  `ngay_sinh` varchar(255) NOT NULL,
-  `so_dienthoai` varchar(255) NOT NULL,
-  `ghi_chu` int(11) NOT NULL,
+  `ten_nhanvien` varchar(255) DEFAULT NULL,
+  `phai` tinyint(4) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `dia_chi` text,
+  `ngay_sinh` varchar(255) DEFAULT NULL,
+  `so_dienthoai` varchar(255) DEFAULT NULL,
+  `ghi_chu` text,
   `images` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 

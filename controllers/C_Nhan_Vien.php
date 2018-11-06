@@ -32,9 +32,23 @@ class C_Nhan_Vien
         $ngay_sinh = $_REQUEST['ngay_sinh'];
         $dien_thoai = $_REQUEST['dien_thoai'];
         $ghi_chu = $_REQUEST['ghi_chu'];
-        $images = $_REQUEST['images'];
 
-        $m_nhan_vien->Them($ten_nhanvien,$phai,$email,$dia_chi,$ngay_sinh,$dien_thoai,$ghi_chu,$images);
+        $m_nhan_vien->Them($ten_nhanvien,$phai,$email,$dia_chi,$ngay_sinh,$dien_thoai,$ghi_chu);
+
+        header('Location:/nhanvien.php');
+    }
+
+    function Sua_Nhan_Vien($id){
+        $m_nhan_vien = new M_nhan_vien();
+        $ten_nhanvien = $_REQUEST['ten_nhan_vien'];
+        $phai = $_REQUEST['phai'];
+        $email = $_REQUEST['email'];
+        $dia_chi = $_REQUEST['dia_chi'];
+        $ngay_sinh = $_REQUEST['ngay_sinh'];
+        $dien_thoai = $_REQUEST['dien_thoai'];
+        $ghi_chu = $_REQUEST['ghi_chu'];
+
+        $m_nhan_vien->Sua($ten_nhanvien,$phai,$email,$dia_chi,$ngay_sinh,$dien_thoai,$ghi_chu,$id);
 
         header('Location:/nhanvien.php');
     }
