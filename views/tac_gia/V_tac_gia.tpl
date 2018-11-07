@@ -5,7 +5,7 @@
                 <i class="material-icons">person</i>
             </div>
             <div class="card-content">
-                <h4 class="card-title">Danh Sách {$title}</h4>
+                <h4 class="card-title">Danh Sách - {$title}</h4>
                 <div class="toolbar">
                     <a href="/tacgia.php/?action=them" class="btn btn-success">Thêm<div class="ripple-container"></div></a>
                 </div>

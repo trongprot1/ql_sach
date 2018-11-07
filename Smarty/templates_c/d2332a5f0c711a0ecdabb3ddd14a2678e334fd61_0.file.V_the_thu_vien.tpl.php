@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-06 17:52:55
+/* Smarty version 3.1.33, created on 2018-11-07 15:37:56
   from 'E:\QL Sach\views\the_thu_vien\V_the_thu_vien.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be1d4f77df139_51382044',
+  'unifunc' => 'content_5be306d435d373_61201552',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd2332a5f0c711a0ecdabb3ddd14a2678e334fd61' => 
     array (
       0 => 'E:\\QL Sach\\views\\the_thu_vien\\V_the_thu_vien.tpl',
-      1 => 1541526773,
+      1 => 1541605065,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be1d4f77df139_51382044 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be306d435d373_61201552 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -28,7 +28,7 @@ function content_5be1d4f77df139_51382044 (Smarty_Internal_Template $_smarty_tpl)
                 <i class="material-icons">person</i>
             </div>
             <div class="card-content">
-                <h4 class="card-title">Danh Sách <?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+                <h4 class="card-title">Danh Sách - <?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </h4>
                 <div class="toolbar">
                     <a href="/thethuvien.php/?action=them" class="btn btn-success">Thêm<div class="ripple-container"></div></a>

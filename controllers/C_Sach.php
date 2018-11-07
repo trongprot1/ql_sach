@@ -18,26 +18,32 @@ class C_Sach
     {
         $m_sach = new M_sach();
 
-        $ten_tacgia = $_REQUEST['ten_tacgia'];
-        $website = $_REQUEST['website'];
+        $ten_sach = $_REQUEST['ten_sach'];
+        $ma_tacgia = $_REQUEST['website'];
+        $ma_theloai = $_REQUEST['ma_theloai'];
+        $ma_nxb = $_REQUEST['ma_nxb'];
+        $nam_xuatban = $_REQUEST['nam_xuatban'];
         $ghi_chu = $_REQUEST['ghi_chu'];
 
-        $m_sach->Them($ten_tacgia, $website, $ghi_chu);
+        $m_sach->Them($ten_sach, $ma_tacgia,$ma_theloai,$ma_nxb,$nam_xuatban, $ghi_chu);
 
-        header('Location:/tacgia.php');
+        header('Location:/sach.php');
     }
 
     function Sua_Sach($id)
     {
         $m_sach = new M_sach();
 
-        $ten_tacgia = $_REQUEST['ten_tacgia'];
-        $website = $_REQUEST['website'];
+        $ten_sach = $_REQUEST['ten_sach'];
+        $ma_tacgia = $_REQUEST['website'];
+        $ma_theloai = $_REQUEST['ma_theloai'];
+        $ma_nxb = $_REQUEST['ma_nxb'];
+        $nam_xuatban = $_REQUEST['nam_xuatban'];
         $ghi_chu = $_REQUEST['ghi_chu'];
 
-        $m_sach->Sua($ten_tacgia,$website, $ghi_chu, $id);
+        $m_sach->Sua($ten_sach, $ma_tacgia,$ma_theloai,$ma_nxb,$nam_xuatban, $ghi_chu, $id);
 
-        header('Location:/tacgia.php');
+        header('Location:/sach.php');
     }
 
     function Hien_Thi_Tat_Ca_Sach()
@@ -77,6 +83,6 @@ class C_Sach
     {
         $m_sach = new M_sach();
         $m_sach->Xoa($id);
-        header('Location:tacgia.php');
+        header('Location:sach.php');
     }
 }

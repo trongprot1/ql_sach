@@ -2,32 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba9cd9a2-c009-4c2f-9dd3-275bbe9feca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nxb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theloai.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thethuvien.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/nxb/V_nxb.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/nxb/V_sua_nxb.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/nxb/V_them_nxb.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/the_loai/V_sua_the_loai.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/the_loai/V_the_loai.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/the_loai/V_them_the_loai.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/the_thu_vien/V_sua_the_thu_vien.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/the_thu_vien/V_the_thu_vien.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/the_thu_vien/V_them_the_thu_vien.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sach.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/sach/V_sach.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/sach/V_sua_sach.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/sach/V_them_sach.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smarty/templates/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/Smarty/templates/sidebar.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smarty/templates_c/09e7ce380c180f6ae775bd759cec2499594576ac_0.file.V_tac_gia.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/Smarty/templates_c/09e7ce380c180f6ae775bd759cec2499594576ac_0.file.V_tac_gia.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smarty/templates_c/8d549aa4c46784d83bbb9bc02ab2e040017b4037_0.file.V_nhan_vien.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/Smarty/templates_c/8d549aa4c46784d83bbb9bc02ab2e040017b4037_0.file.V_nhan_vien.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Smarty/templates_c/9ce10eef9ef79dc68e6b674a2964eb4be3fa89c7_0.file.V_sua_nhan_vien.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/Smarty/templates_c/9ce10eef9ef79dc68e6b674a2964eb4be3fa89c7_0.file.V_sua_nhan_vien.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Smarty/templates_c/c2262f89a72ae7a6433f5b661d40e1e47fbbd591_0.file.sidebar.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/Smarty/templates_c/c2262f89a72ae7a6433f5b661d40e1e47fbbd591_0.file.sidebar.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/C_NXB.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/C_NXB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/C_The_Loai.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/C_The_Loai.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/C_The_Thu_Vien.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/C_The_Thu_Vien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/M_nxb.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/M_nxb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/M_the_loai.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/M_the_loai.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/M_the_thu_vien.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/M_the_thu_vien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/tac_gia/V_sua_tac_gia.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/tac_gia/V_sua_tac_gia.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smarty/templates_c/cddbeaa0ca883536b562b85aecceb61430bb1b40_0.file.V_nxb.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/Smarty/templates_c/cddbeaa0ca883536b562b85aecceb61430bb1b40_0.file.V_nxb.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smarty/templates_c/d2332a5f0c711a0ecdabb3ddd14a2678e334fd61_0.file.V_the_thu_vien.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/Smarty/templates_c/d2332a5f0c711a0ecdabb3ddd14a2678e334fd61_0.file.V_the_thu_vien.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Smarty/templates_c/dc1c439e216adf16df071d74ad748f39c1659e58_0.file.V_the_loai.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/Smarty/templates_c/dc1c439e216adf16df071d74ad748f39c1659e58_0.file.V_the_loai.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/C_Sach.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/C_Sach.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/M_sach.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/M_sach.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/nhan_vien/V_nhan_vien.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/nhan_vien/V_nhan_vien.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/nxb/V_nxb.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/nxb/V_nxb.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/tac_gia/V_tac_gia.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/tac_gia/V_tac_gia.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/the_loai/V_the_loai.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/the_loai/V_the_loai.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/the_thu_vien/V_the_thu_vien.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/views/the_thu_vien/V_the_thu_vien.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,11 +79,12 @@
     <session id="1808334937">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.14" value="3" />
+          <entry key="project.open.time.14" value="4" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -98,45 +92,45 @@
           <entry key="css" value="1" />
           <entry key="ct_muontra" value="1" />
           <entry key="docgia" value="1" />
-          <entry key="jpg" value="4" />
+          <entry key="jpg" value="8" />
           <entry key="js" value="9" />
           <entry key="muon_tra" value="1" />
           <entry key="nhan_vien" value="1" />
           <entry key="nhaxuatban" value="1" />
-          <entry key="php" value="70" />
+          <entry key="php" value="77" />
           <entry key="sach" value="1" />
           <entry key="sql" value="1" />
           <entry key="theloai" value="1" />
           <entry key="thethuvien" value="1" />
-          <entry key="tpl" value="59" />
+          <entry key="tpl" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="Database Element" value="8" />
-          <entry key="Image" value="4" />
+          <entry key="Image" value="8" />
           <entry key="JavaScript" value="9" />
-          <entry key="PHP" value="70" />
+          <entry key="PHP" value="77" />
           <entry key="Scratch" value="1" />
-          <entry key="Smarty" value="59" />
+          <entry key="Smarty" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="30" />
           <entry key="js" value="160" />
-          <entry key="php" value="2840" />
-          <entry key="tpl" value="2411" />
+          <entry key="php" value="3171" />
+          <entry key="tpl" value="2742" />
           <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="160" />
-          <entry key="PHP" value="2840" />
+          <entry key="PHP" value="3171" />
           <entry key="PLAIN_TEXT" value="40" />
-          <entry key="Smarty" value="2411" />
+          <entry key="Smarty" value="2742" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -192,7 +186,47 @@
     <favorites_list name="QL Sach" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/C_Sach.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+              <folding>
+                <element signature="n#Xoa_Sach_Theo_Id#0;n#C_Sach#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/sach/V_sach.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/sach/V_them_sach.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="74" column="34" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/M_sach.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -220,15 +254,15 @@
       <find>echo</find>
       <find>extended</find>
       <find>$c_nhan_vien</find>
-      <find>Tac_Gia</find>
-      <find>tac_gia</find>
       <find>Tác Giả</find>
       <find>$ngay_bat_dau</find>
       <find>The_Thu_VIen</find>
       <find>tacgia</find>
+      <find>tac_gia</find>
+      <find>Tac_Gia</find>
+      <find>nhanvien</find>
     </findStrings>
     <replaceStrings>
-      <replace>../../</replace>
       <replace>$this</replace>
       <replace>smarty</replace>
       <replace>nhan_vien</replace>
@@ -255,6 +289,10 @@
       <replace>ngay_ketthuc</replace>
       <replace>ngay_batdau</replace>
       <replace>thethuvien</replace>
+      <replace>Sách</replace>
+      <replace>Sacy</replace>
+      <replace>Sach</replace>
+      <replace>sach</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -263,11 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/database.php" />
-        <option value="$PROJECT_DIR$/controller/smarty.php" />
-        <option value="$PROJECT_DIR$/smarty/templates/head.tpl" />
-        <option value="$PROJECT_DIR$/smarty/templates/sidebar.tpl" />
-        <option value="$PROJECT_DIR$/smarty/templates/foot.tpl" />
         <option value="$PROJECT_DIR$/smarty/templates/footer.tpl" />
         <option value="$PROJECT_DIR$/smarty/templates/content.tpl" />
         <option value="$PROJECT_DIR$/smarty/templates/layout.tpl" />
@@ -299,21 +332,26 @@
         <option value="$PROJECT_DIR$/controllers/C_NXB.php" />
         <option value="$PROJECT_DIR$/controllers/C_The_Loai.php" />
         <option value="$PROJECT_DIR$/nxb.php" />
-        <option value="$PROJECT_DIR$/views/tac_gia/V_tac_gia.tpl" />
-        <option value="$PROJECT_DIR$/views/the_loai/V_the_loai.tpl" />
         <option value="$PROJECT_DIR$/views/the_loai/V_sua_the_loai.tpl" />
-        <option value="$PROJECT_DIR$/views/nxb/V_nxb.tpl" />
         <option value="$PROJECT_DIR$/views/nxb/V_them_nxb.tpl" />
         <option value="$PROJECT_DIR$/views/nxb/V_sua_nxb.tpl" />
         <option value="$PROJECT_DIR$/model/M_the_thu_vien.php" />
         <option value="$PROJECT_DIR$/thethuvien.php" />
         <option value="$PROJECT_DIR$/controllers/C_The_Thu_Vien.php" />
-        <option value="$PROJECT_DIR$/Smarty/templates/sidebar.tpl" />
         <option value="$PROJECT_DIR$/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/views/the_thu_vien/V_them_the_thu_vien.tpl" />
-        <option value="$PROJECT_DIR$/views/the_thu_vien/V_the_thu_vien.tpl" />
         <option value="$PROJECT_DIR$/views/the_thu_vien/V_sua_the_thu_vien.tpl" />
+        <option value="$PROJECT_DIR$/controllers/C_Sach.php" />
+        <option value="$PROJECT_DIR$/model/M_sach.php" />
+        <option value="$PROJECT_DIR$/sach.php" />
+        <option value="$PROJECT_DIR$/Smarty/templates/sidebar.tpl" />
+        <option value="$PROJECT_DIR$/views/sach/V_sach.tpl" />
         <option value="$PROJECT_DIR$/views/nhan_vien/V_nhan_vien.tpl" />
+        <option value="$PROJECT_DIR$/views/nxb/V_nxb.tpl" />
+        <option value="$PROJECT_DIR$/views/tac_gia/V_tac_gia.tpl" />
+        <option value="$PROJECT_DIR$/views/the_loai/V_the_loai.tpl" />
+        <option value="$PROJECT_DIR$/views/the_thu_vien/V_the_thu_vien.tpl" />
+        <option value="$PROJECT_DIR$/views/sach/V_them_sach.tpl" />
       </list>
     </option>
   </component>
@@ -358,7 +396,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -381,10 +418,47 @@
               <item name="QL Sach" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="QL Sach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QL Sach" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="nhan_vien" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QL Sach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QL Sach" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="nxb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QL Sach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QL Sach" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="sach" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QL Sach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QL Sach" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="tac_gia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QL Sach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QL Sach" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="the_loai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QL Sach" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QL Sach" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="the_thu_vien" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,14 +470,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\QL Sach\Smarty" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\QL Sach\views\sach" />
       <recent name="E:\QL Sach\views\the_thu_vien" />
       <recent name="E:\QL Sach" />
       <recent name="E:\QL Sach\views\nxb" />
       <recent name="E:\QL Sach\views\the_loai" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\QL Sach\Smarty" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -438,20 +513,23 @@
       <workItem from="1541424642083" duration="16968000" />
       <workItem from="1541443127832" duration="4415000" />
       <workItem from="1541494874872" duration="7464000" />
-      <workItem from="1541511243176" duration="10483000" />
+      <workItem from="1541511243176" duration="11478000" />
+      <workItem from="1541600198747" duration="5167000" />
+      <workItem from="1541620144360" duration="651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61661000" />
+    <option name="totallyTimeSpent" value="68474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5013405" side_tool="true" weight="0.25718608" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49865952" visible="true" weight="0.2677761" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49865952" weight="0.27155825" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32850242" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.3993559" />
       <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
@@ -469,6 +547,28 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" sideWeight="0.5013405" side_tool="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49865952" visible="true" weight="0.27155825" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32850242" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50075644" side_tool="true" weight="0.3993559" />
+      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" />
+      <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.49924356" weight="0.3988889" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32850242" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.14220877" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -491,38 +591,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/js/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2737">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/faces/marc.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/faces/card-profile2-square.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/faces/card-profile1-square.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/img/faces/avatar.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/lam.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/upload/onedrive.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload/20189e07b11c-940e-44a8-9f93-38f559753462.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -571,9 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/C_Sach.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/C_Doc_gia.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -581,13 +646,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tacgia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -626,31 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/the_loai/V_the_loai.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/tac_gia/V_tac_gia.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/C_NXB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="69" column="46" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/nxb/V_nxb.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-116">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -689,21 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/C_Tac_Gia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="36" />
-          <folding>
-            <element signature="n#V_Them_Tac_Gia#0;n#C_Tac_Gia#0;n#!!top" />
-            <element signature="n#Them_Tac_Gia#0;n#C_Tac_Gia#0;n#!!top" />
-            <element signature="n#Sua_Tac_Gia#0;n#C_Tac_Gia#0;n#!!top" />
-            <element signature="n#Hien_Thi_Tat_Ca_Tac_Gia#0;n#C_Tac_Gia#0;n#!!top" />
-            <element signature="n#Hien_Thi_Tac_Gia_Theo_Id#0;n#C_Tac_Gia#0;n#!!top" />
-            <element signature="n#Xoa_Tac_Gia_Theo_Id#0;n#C_Tac_Gia#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/M_the_loai.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -718,30 +740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/M_tac_gia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="24" />
-          <folding>
-            <element signature="n#Doc_Tat_Ca_Tac_Gia#0;n#M_tac_gia#0;n#!!top" />
-            <element signature="n#Doc_Tac_Gia_Theo_Id#0;n#M_tac_gia#0;n#!!top" />
-            <element signature="n#Them#0;n#M_tac_gia#0;n#!!top" />
-            <element signature="n#Sua#0;n#M_tac_gia#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thethuvien.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Smarty/templates/sidebar.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="95" column="40" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -763,13 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/the_thu_vien/V_the_thu_vien.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -815,10 +810,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/nhan_vien/V_nhan_vien.tpl">
+    <entry file="file://$PROJECT_DIR$/controllers/C_Tac_Gia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/M_tac_gia.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tacgia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sach.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/sidebar-1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/sidebar-2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/sidebar-3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/img/sidebar-4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Smarty/templates/sidebar.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/nhan_vien/V_nhan_vien.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/nxb/V_nxb.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/tac_gia/V_tac_gia.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/the_thu_vien/V_the_thu_vien.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/the_loai/V_the_loai.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/C_Sach.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="n#Xoa_Sach_Theo_Id#0;n#C_Sach#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sach/V_sach.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/M_sach.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sach/V_them_sach.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="74" column="34" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="34" />
         </state>
       </provider>
     </entry>

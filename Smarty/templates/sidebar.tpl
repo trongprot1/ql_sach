@@ -69,7 +69,7 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 </a>
             </li>
             <li class="{($title == "Sách")?"active":""}">
-                <a href="/index.php">
+                <a href="/sach.php">
                     <i class="material-icons">books</i>
                     <p> Sách </p>
                 </a>
