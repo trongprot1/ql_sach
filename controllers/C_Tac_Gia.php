@@ -56,6 +56,7 @@ class C_Tac_Gia
 
         $smarty->display('layout.tpl');
     }
+
     function Hien_Thi_Tac_Gia_Theo_Id($id)
     {
         $smarty = new Smarty_thu_vien();

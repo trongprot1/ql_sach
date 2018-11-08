@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-07 15:36:47
+/* Smarty version 3.1.33, created on 2018-11-08 15:28:49
   from 'E:\QL Sach\views\sach\V_sach.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be3068f0e9188_59406614',
+  'unifunc' => 'content_5be456319d3f42_35414692',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '49509098150f8236c9478ee8a183186849f4bf5e' => 
     array (
       0 => 'E:\\QL Sach\\views\\sach\\V_sach.tpl',
-      1 => 1541605006,
+      1 => 1541684268,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be3068f0e9188_59406614 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be456319d3f42_35414692 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -48,19 +48,6 @@ function content_5be3068f0e9188_59406614 (Smarty_Internal_Template $_smarty_tpl)
                             <th class="disabled-sorting text-right">Actions</th>
                         </tr>
                         </thead>
-                        <tfoot>
-                        <tr>
-                            <th>Id</th>
-                            <th>Tên Sách</th>
-                            <th>Tác Giả</th>
-                            <th>Thể Loại</th>
-                            <th>NXB</th>
-                            <th>Năm Xuất Bản</th>
-                            <th>Hình Ảnh</th>
-                            <th>Ghi Chú</th>
-                            <th class="disabled-sorting text-right">Actions</th>
-                        </tr>
-                        </tfoot>
                         <tbody>
                         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
@@ -71,8 +58,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
                             <tr>
                                 <td><?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 </td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ten_sach'];?>
-</td>
+                                <td><strong><?php echo $_smarty_tpl->tpl_vars['item']->value['ten_sach'];?>
+</strong></td>
                                 <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ma_tacgia'];?>
 </td>
                                 <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ma_theloai'];?>
@@ -83,7 +70,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 </td>
                                 <td><?php echo $_smarty_tpl->tpl_vars['item']->value['images'];?>
 </td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ghi_chu'];?>
+                                <td><?php echo mb_strimwidth($_smarty_tpl->tpl_vars['item']->value['ghi_chu'],0,100,'...');?>
 </td>
                                 <td class="text-right">
                                     <a href="/sach.php?action=xem&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
@@ -105,7 +92,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <!--  end card  -->
     </div>
     <!-- end col-md-12 -->
-</div>
-<?php echo var_dump($_smarty_tpl->tpl_vars['arr']->value);
-}
+</div><?php }
 }

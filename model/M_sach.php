@@ -62,7 +62,13 @@ class M_sach extends Database
 
     function Sua($ten_sach, $ma_tacgia, $ma_theloai, $ma_nxb, $nam_xuatban, $ghi_chu, $id)
     {
-        $sql = "Update sach SET ten_sach='$ten_sach', ma_tacgia = '$ma_tacgia',ma_theloai = '$ma_theloai',ma_nxb='$ma_nxb',nam_xuatban='$nam_xuatban',ghi_chu='$ghi_chu' WHERE id=$id";
+        $upload = new Hinhanh();
+        $images = $upload->upload();
+        if(isset($images)){
+            $sql = "Update sach SET ten_sach='$ten_sach', ma_tacgia = '$ma_tacgia',ma_theloai = '$ma_theloai',ma_nxb='$ma_nxb',nam_xuatban='$nam_xuatban',images='$images', ghi_chu='$ghi_chu' WHERE id=$id";
+        }else{
+            $sql = "Update sach SET ten_sach='$ten_sach', ma_tacgia = '$ma_tacgia',ma_theloai = '$ma_theloai',ma_nxb='$ma_nxb',nam_xuatban='$nam_xuatban',ghi_chu='$ghi_chu' WHERE id=$id";
+        }
         return $this->exe($sql);
     }
 

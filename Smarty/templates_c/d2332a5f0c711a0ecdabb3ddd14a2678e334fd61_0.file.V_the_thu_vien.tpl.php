@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-07 15:37:56
+/* Smarty version 3.1.33, created on 2018-11-08 15:36:26
   from 'E:\QL Sach\views\the_thu_vien\V_the_thu_vien.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be306d435d373_61201552',
+  'unifunc' => 'content_5be457fae1c072_04151726',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd2332a5f0c711a0ecdabb3ddd14a2678e334fd61' => 
     array (
       0 => 'E:\\QL Sach\\views\\the_thu_vien\\V_the_thu_vien.tpl',
-      1 => 1541605065,
+      1 => 1541691385,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be306d435d373_61201552 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be457fae1c072_04151726 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -44,15 +44,6 @@ function content_5be306d435d373_61201552 (Smarty_Internal_Template $_smarty_tpl)
                             <th class="disabled-sorting text-right">Actions</th>
                         </tr>
                         </thead>
-                        <tfoot>
-                        <tr>
-                            <th>Id</th>
-                            <th>Ngày Bắt Đầu</th>
-                            <th>Ngày Kết Thúc</th>
-                            <th>Ghi Chú</th>
-                            <th class="disabled-sorting text-right">Actions</th>
-                        </tr>
-                        </tfoot>
                         <tbody>
                         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
@@ -88,7 +79,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <!--  end card  -->
     </div>
     <!-- end col-md-12 -->
-</div>
-<?php echo var_dump($_smarty_tpl->tpl_vars['arr']->value);
-}
+</div><?php }
 }

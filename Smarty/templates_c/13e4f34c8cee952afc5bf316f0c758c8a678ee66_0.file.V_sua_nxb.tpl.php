@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-06 16:47:03
+/* Smarty version 3.1.33, created on 2018-11-08 15:31:31
   from 'E:\QL Sach\views\nxb\V_sua_nxb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be1c5875e1b73_44855698',
+  'unifunc' => 'content_5be456d325e4b0_98883361',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '13e4f34c8cee952afc5bf316f0c758c8a678ee66' => 
     array (
       0 => 'E:\\QL Sach\\views\\nxb\\V_sua_nxb.tpl',
-      1 => 1541522821,
+      1 => 1541684268,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be1c5875e1b73_44855698 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be456d325e4b0_98883361 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
@@ -42,7 +42,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <div class="row">
                     <div class="col-md-5">
                         <div class="form-group label-floating">
-                            <label class="control-label">Tên Tác Giả</label>
+                            <label class="control-label">Tên Nhà Xuất Bản</label>
                             <input name="ten_nxb" value="<?php echo $_smarty_tpl->tpl_vars['item']->value['ten_nxb'] ? $_smarty_tpl->tpl_vars['item']->value['ten_nxb'] : '';?>
 " type="text" class="form-control">
                         </div>
@@ -69,7 +69,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             <label>Thông Tin</label>
                             <div class="form-group label-floating">
                                 <label class="control-label"></label>
-                                <textarea name="thong_tin" class="form-control" rows="5"><?php echo $_smarty_tpl->tpl_vars['item']->value['thong_tin'] ? $_smarty_tpl->tpl_vars['item']->value['ten_nxb'] : '';?>
+                                <textarea name="thong_tin" class="form-control" rows="15"><?php echo $_smarty_tpl->tpl_vars['item']->value['thong_tin'] ? $_smarty_tpl->tpl_vars['item']->value['thong_tin'] : '';?>
 </textarea>
                             </div>
                         </div>

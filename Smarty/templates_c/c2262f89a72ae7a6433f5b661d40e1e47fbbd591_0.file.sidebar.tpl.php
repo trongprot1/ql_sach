@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-07 15:27:40
+/* Smarty version 3.1.33, created on 2018-11-08 17:53:28
   from 'E:\QL Sach\Smarty\templates\sidebar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be3046c623765_15171925',
+  'unifunc' => 'content_5be47818ab0295_41062340',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c2262f89a72ae7a6433f5b661d40e1e47fbbd591' => 
     array (
       0 => 'E:\\QL Sach\\Smarty\\templates\\sidebar.tpl',
-      1 => 1541604458,
+      1 => 1541695259,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be3046c623765_15171925 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be47818ab0295_41062340 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="sidebar" data-active-color="rose" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
     <!--
 Tip 1: You can change the color of active element of the sidebar using: data-active-color="purple | blue | green | orange | red | rose"
@@ -81,14 +81,14 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
             </li>
             <li class="<?php echo $_smarty_tpl->tpl_vars['title']->value == "Mượn Trả" ? "active" : '';?>
 ">
-                <a href="/index.php">
+                <a href="/muontra.php">
                     <i class="material-icons">dashboard</i>
                     <p> Mượn Trả </p>
                 </a>
             </li>
             <li class="<?php echo $_smarty_tpl->tpl_vars['title']->value == "Đọc Giả" ? "active" : '';?>
 ">
-                <a href="/index.php">
+                <a href="/docgia.php">
                     <i class="material-icons">dashboard</i>
                     <p> Đọc Giả </p>
                 </a>

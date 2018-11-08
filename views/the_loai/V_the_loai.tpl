@@ -18,18 +18,11 @@
                             <th class="disabled-sorting text-right">Actions</th>
                         </tr>
                         </thead>
-                        <tfoot>
-                        <tr>
-                            <th>Id</th>
-                            <th>Tên Thể Loại</th>
-                            <th class="disabled-sorting text-right">Actions</th>
-                        </tr>
-                        </tfoot>
                         <tbody>
                         {foreach $arr as $item}
                             <tr>
                                 <td>{$item['id']}</td>
-                                <td>{$item['ten_theloai']}</td>
+                                <td><strong>{$item['ten_theloai']}</strong></td>
                                 <td class="text-right">
                                     <a href="/theloai.php?action=xem&id={$item['id']}" class="btn btn-simple btn-info btn-icon like">Xem</a>
                                     <a href="/theloai.php?action=xoa&id={$item['id']}" class="btn btn-simple btn-danger btn-icon remove">Xoá</a>
@@ -46,4 +39,3 @@
     </div>
     <!-- end col-md-12 -->
 </div>
-{var_dump($arr)}

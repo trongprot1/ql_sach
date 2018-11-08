@@ -21,21 +21,11 @@
                             <th class="disabled-sorting text-right">Actions</th>
                         </tr>
                         </thead>
-                        <tfoot>
-                        <tr>
-                            <th>Id</th>
-                            <th>Tên Nhà Xuất Bản</th>
-                            <th>Email</th>
-                            <th>Địa Chỉ</th>
-                            <th>Thông Tin</th>
-                            <th class="disabled-sorting text-right">Actions</th>
-                        </tr>
-                        </tfoot>
                         <tbody>
                         {foreach $arr as $item}
                             <tr>
                                 <td>{$item['id']}</td>
-                                <td>{$item['ten_nxb']}</td>
+                                <td><strong>{$item['ten_nxb']}</strong></td>
                                 <td>{$item['email']}</td>
                                 <td>{$item['dia_chi']}</td>
                                 <td>{mb_strimwidth($item['thong_tin'], 0, 150, '...')}</td>
@@ -55,4 +45,3 @@
     </div>
     <!-- end col-md-12 -->
 </div>
-{var_dump($arr)}

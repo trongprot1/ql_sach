@@ -7,15 +7,19 @@
             <div class="card-content">
                 <h4 class="card-title">Danh Sách - {$title}</h4>
                 <div class="toolbar">
-                    <a href="/thethuvien.php/?action=them" class="btn btn-success">Thêm<div class="ripple-container"></div></a>
+                    <a href="/docgia.php/?action=them" class="btn btn-success">Thêm<div class="ripple-container"></div></a>
                 </div>
                 <div class="material-datatables">
                     <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
                         <thead>
                         <tr>
                             <th>Id</th>
-                            <th>Ngày Bắt Đầu</th>
-                            <th>Ngày Kết Thúc</th>
+                            <th>Tên Đọc Giả</th>
+                            <th>Phái</th>
+                            <th>Ngày Sinh>
+                            <th>Địa Chỉ</th>
+                            <th>Số Điện Thoại</th>
+                            <th>Số Thẻ</th>
                             <th>Ghi Chú</th>
                             <th class="disabled-sorting text-right">Actions</th>
                         </tr>
@@ -24,12 +28,16 @@
                         {foreach $arr as $item}
                             <tr>
                                 <td>{$item['id']}</td>
-                                <td>{$item['ngay_batdau']}</td>
-                                <td>{$item['ngay_ketthuc']}</td>
+                                <td><strong>{$item['ten_docgia']}</strong></td>
+                                <td>{$item['phai']}</td>
+                                <td>{$item['ngay_sinh']}</td>
+                                <td>{$item['diachi']}</td>
+                                <td>{$item['so_dienthoai']}</td>
+                                <td>{$item['so_the']}</td>
                                 <td>{$item['ghi_chu']}</td>
                                 <td class="text-right">
-                                    <a href="/thethuvien.php?action=xem&id={$item['id']}" class="btn btn-simple btn-info btn-icon like">Xem</a>
-                                    <a href="/thethuvien.php?action=xoa&id={$item['id']}" class="btn btn-simple btn-danger btn-icon remove">Xoá</a>
+                                    <a href="/docgia.php?action=xem&id={$item['id']}" class="btn btn-simple btn-info btn-icon like">Xem</a>
+                                    <a href="/docgia.php?action=xoa&id={$item['id']}" class="btn btn-simple btn-danger btn-icon remove">Xoá</a>
                                 </td>
                             </tr>
                         {/foreach}

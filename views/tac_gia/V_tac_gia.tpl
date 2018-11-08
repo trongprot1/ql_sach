@@ -43,4 +43,3 @@
     </div>
     <!-- end col-md-12 -->
 </div>
-{var_dump($arr)}

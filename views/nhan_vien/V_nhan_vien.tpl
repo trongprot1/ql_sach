@@ -23,23 +23,11 @@
                             <th class="disabled-sorting text-right">Actions</th>
                         </tr>
                         </thead>
-                        <tfoot>
-                        <tr>
-                            <th>Id</th>
-                            <th>Tên Nhân Viên</th>
-                            <th>Phái</th>
-                            <th>Email</th>
-                            <th>Địa Chỉ</th>
-                            <th>Ngày Sinh</th>
-                            <th>Số Điện Thoại</th>
-                            <th class="disabled-sorting text-right">Actions</th>
-                        </tr>
-                        </tfoot>
                         <tbody>
                         {foreach $arr as $item}
                             <tr>
                                 <td>{$item['id']}</td>
-                                <td>{$item['ten_nhanvien']}</td>
+                                <td><strong>{$item['ten_nhanvien']}</strong></td>
                                 <td>{($item['phai'] == 1)?"Nữ":"Nam"}</td>
                                 <td><a href="mailto:{$item['email']}">{$item['email']}</a></td>
                                 <td>{$item['dia_chi']}</td>
@@ -61,4 +49,3 @@
     </div>
     <!-- end col-md-12 -->
 </div>
-{var_dump($arr)}

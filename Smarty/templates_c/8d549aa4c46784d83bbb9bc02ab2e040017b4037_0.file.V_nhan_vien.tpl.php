@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-07 15:37:08
+/* Smarty version 3.1.33, created on 2018-11-08 15:36:55
   from 'E:\QL Sach\views\nhan_vien\V_nhan_vien.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be306a4e99d21_05257291',
+  'unifunc' => 'content_5be45817d0fe39_87586120',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8d549aa4c46784d83bbb9bc02ab2e040017b4037' => 
     array (
       0 => 'E:\\QL Sach\\views\\nhan_vien\\V_nhan_vien.tpl',
-      1 => 1541605026,
+      1 => 1541691414,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be306a4e99d21_05257291 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be45817d0fe39_87586120 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -47,18 +47,6 @@ function content_5be306a4e99d21_05257291 (Smarty_Internal_Template $_smarty_tpl)
                             <th class="disabled-sorting text-right">Actions</th>
                         </tr>
                         </thead>
-                        <tfoot>
-                        <tr>
-                            <th>Id</th>
-                            <th>Tên Nhân Viên</th>
-                            <th>Phái</th>
-                            <th>Email</th>
-                            <th>Địa Chỉ</th>
-                            <th>Ngày Sinh</th>
-                            <th>Số Điện Thoại</th>
-                            <th class="disabled-sorting text-right">Actions</th>
-                        </tr>
-                        </tfoot>
                         <tbody>
                         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
@@ -68,8 +56,8 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
                             <tr>
                                 <td><?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 </td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ten_nhanvien'];?>
-</td>
+                                <td><strong><?php echo $_smarty_tpl->tpl_vars['item']->value['ten_nhanvien'];?>
+</strong></td>
                                 <td><?php echo $_smarty_tpl->tpl_vars['item']->value['phai'] == 1 ? "Nữ" : "Nam";?>
 </td>
                                 <td><a href="mailto:<?php echo $_smarty_tpl->tpl_vars['item']->value['email'];?>
@@ -101,7 +89,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         <!--  end card  -->
     </div>
     <!-- end col-md-12 -->
-</div>
-<?php echo var_dump($_smarty_tpl->tpl_vars['arr']->value);
-}
+</div><?php }
 }

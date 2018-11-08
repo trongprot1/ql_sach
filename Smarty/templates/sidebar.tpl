@@ -57,13 +57,13 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
                 </a>
             </li>
             <li class="{($title == "Mượn Trả")?"active":""}">
-                <a href="/index.php">
+                <a href="/muontra.php">
                     <i class="material-icons">dashboard</i>
                     <p> Mượn Trả </p>
                 </a>
             </li>
             <li class="{($title == "Đọc Giả")?"active":""}">
-                <a href="/index.php">
+                <a href="/docgia.php">
                     <i class="material-icons">dashboard</i>
                     <p> Đọc Giả </p>
                 </a>
