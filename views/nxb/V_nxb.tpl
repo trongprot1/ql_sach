@@ -38,7 +38,7 @@
                                 <td>{$item['ten_nxb']}</td>
                                 <td>{$item['email']}</td>
                                 <td>{$item['dia_chi']}</td>
-                                <td>{$item['thong_tin']}</td>
+                                <td>{mb_strimwidth($item['thong_tin'], 0, 150, '...')}</td>
                                 <td class="text-right">
                                     <a href="/nxb.php?action=xem&id={$item['id']}" class="btn btn-simple btn-info btn-icon like">Xem</a>
                                     <a href="/nxb.php?action=xoa&id={$item['id']}" class="btn btn-simple btn-danger btn-icon remove">Xoá</a>

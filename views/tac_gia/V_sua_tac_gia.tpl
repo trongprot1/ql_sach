@@ -30,7 +30,7 @@
                             <label>Ghi Chú</label>
                             <div class="form-group label-floating">
                                 <label class="control-label"></label>
-                                <textarea name="ghi_chu" class="form-control" rows="5">{($item['ghichu'])?$item['ghichu']:""}</textarea>
+                                <textarea name="ghi_chu" class="form-control" rows="15">{($item['ghichu'])?$item['ghichu']:""}</textarea>
                             </div>
                         </div>
                     </div>

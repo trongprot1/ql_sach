@@ -10,47 +10,42 @@
                 <h4 class="card-title">Chi Tiết -
                     <small class="category">Nhân Viên</small>
                 </h4>
-                <form action="/nhanvien.php/?action=capnhat&id={$item['id']}" method="post" enctype="multipart/form-data">
+                <form action="/sach.php/?action=capnhat&id={$item['id']}" method="post" enctype="multipart/form-data">
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <div class="form-group label-floating">
-                                <label class="control-label">Tên Nhân Viên</label>
-                                <input name="ten_nhan_vien" value="{($item['ten_nhanvien'])?$item['ten_nhanvien']:""}" type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group label-floating">
-                                <label class="control-label">Địa Chỉ Email</label>
-                                <input name="email" value="{($item['email'])?$item['email']:""}" type="email" class="form-control">
+                                <label class="control-label">Tên Sách</label>
+                                <input name="ten_sach" value="{($item['ten_sach'])?$item['ten_sach']:""}" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <select name="phai" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Phái" data-size="7">
-                                <option value="0" {($item['phai'] == "0")?"selected":""}>Nam</option>
-                                <option value="1" {($item['phai'] == "1")?"selected":""}>Nữ</option>
+                            <div class="form-group label-floating">
+                                <label class="control-label">Năm Xuất Bản</label>
+                                <input name="nam_xuatban" value="{($item['nam_xuatban'])?$item['nam_xuatban']:""}" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <select name="ma_nxb" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Nhà Xuất Bản" data-size="7">
+                                {foreach $nxb as $list_nxb}
+                                    <option value="{$list_nxb['id']}" {($list_nxb['id'] == $item['ma_nxb'])?"selected":""} >{$list_nxb['ten_nxb']}</option>
+                                {/foreach}
                             </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="form-group label-floating">
-                                <label class="control-label">Ngày Sinh</label>
-                                <input name="ngay_sinh" value="{($item['ngay_sinh'])?$item['ngay_sinh']:""}" type="text" class="form-control datepicker" value="10/10/1993">
-                            </div>
+                            <select name="ma_tacgia" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Tác Giả" data-size="7">
+                                {foreach $tacgia as $list_tacgia}
+                                    <option value="{$list_tacgia['id']}" {($list_tacgia['id'] == $item['ma_tacgia'])?"selected":""} >{$list_tacgia['ten_tacgia']}</option>
+                                {/foreach}
+                            </select>
                         </div>
                         <div class="col-md-6">
-                            <div class="form-group label-floating">
-                                <label class="control-label">Số Điện Thoại</label>
-                                <input name="dien_thoai" value="{($item['so_dienthoai'])?$item['so_dienthoai']:""}" type="text" class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group label-floating">
-                                <label class="control-label">Địa Chỉ</label>
-                                <input name="dia_chi" value="{($item['dia_chi'])?$item['dia_chi']:""}" type="text" class="form-control">
-                            </div>
+                            <select name="ma_theloai" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Thể Loại" data-size="7">
+                                {foreach $theloai as $list_theloai}
+                                    <option value="{$list_theloai['id']}" {($list_theloai['id'] == $item['ma_theloai'])?"selected":""}>{$list_theloai['ten_theloai']}</option>
+                                {/foreach}
+                            </select>
                         </div>
                     </div>
                     <div class="row">
@@ -59,7 +54,7 @@
                                 <label>Ghi Chú</label>
                                 <div class="form-group label-floating">
                                     <label class="control-label"></label>
-                                    <textarea name="ghi_chu" class="form-control" rows="5">{($item['ghi_chu'])?$item['ghi_chu']:""}</textarea>
+                                    <textarea name="ghi_chu" class="form-control" rows="15"> {($item['ghi_chu'])?$item['ghi_chu']:""}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +77,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="/nhanvien.php" class="btn btn-primary">Quay Lại<div class="ripple-container"></div></a>
+                    <a href="/sach.php" class="btn btn-primary">Quay Lại<div class="ripple-container"></div></a>
                     <button type="submit" class="btn btn-rose pull-right">Cập Nhật</button>
                     <div class="clearfix"></div>
                 </form>
@@ -97,12 +92,11 @@
                 </a>
             </div>
             <div class="card-content">
-                <h6 class="category text-gray">Nhân Viên</h6>
-                <h4 class="card-title">{($item['ten_nhanvien'])?$item['ten_nhanvien']:""}</h4>
+                <h6 class="category text-gray">{$title}</h6>
+                <h4 class="card-title">{($item['ten_sach'])?$item['ten_sach']:""}</h4>
                 <p class="description">
                     {($item['ghi_chu'])?$item['ghi_chu']:""}
                 </p>
-                <a href="#" class="btn btn-rose btn-round">Follow</a>
             </div>
         </div>
     </div>

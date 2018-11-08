@@ -24,31 +24,18 @@
                             <th class="disabled-sorting text-right">Actions</th>
                         </tr>
                         </thead>
-                        <tfoot>
-                        <tr>
-                            <th>Id</th>
-                            <th>Tên Sách</th>
-                            <th>Tác Giả</th>
-                            <th>Thể Loại</th>
-                            <th>NXB</th>
-                            <th>Năm Xuất Bản</th>
-                            <th>Hình Ảnh</th>
-                            <th>Ghi Chú</th>
-                            <th class="disabled-sorting text-right">Actions</th>
-                        </tr>
-                        </tfoot>
                         <tbody>
                         {foreach $arr as $item}
 
                             <tr>
                                 <td>{$item['id']}</td>
-                                <td>{$item['ten_sach']}</td>
+                                <td><strong>{$item['ten_sach']}</strong></td>
                                 <td>{$item['ma_tacgia']}</td>
                                 <td>{$item['ma_theloai']}</td>
                                 <td>{$item['ma_nxb']}</td>
                                 <td>{$item['nam_xuatban']}</td>
                                 <td>{$item['images']}</td>
-                                <td>{$item['ghi_chu']}</td>
+                                <td>{mb_strimwidth($item['ghi_chu'], 0, 100, '...')}</td>
                                 <td class="text-right">
                                     <a href="/sach.php?action=xem&id={$item['id']}" class="btn btn-simple btn-info btn-icon like">Xem</a>
                                     <a href="/sach.php?action=xoa&id={$item['id']}" class="btn btn-simple btn-danger btn-icon remove">Xoá</a>
@@ -65,4 +52,3 @@
     </div>
     <!-- end col-md-12 -->
 </div>
-{var_dump($arr)}

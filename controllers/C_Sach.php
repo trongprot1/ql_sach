@@ -7,6 +7,15 @@ class C_Sach
     function V_Them_Sach()
     {
         $smarty = new Smarty_thu_vien();
+        $m_sach = new M_sach();
+
+        $tacgia = $m_sach->Danh_Sach_Tac_Gia();
+        $theloai = $m_sach->Danh_Sach_The_Loai();
+        $nxb = $m_sach->Danh_Sach_NXB();
+
+        $smarty->assign('tacgia', $tacgia);
+        $smarty->assign('theloai', $theloai);
+        $smarty->assign('nxb', $nxb);
         $smarty->assign('title', 'Sách');
         $smarty->assign('view', 'views/sach/V_them_sach.tpl');
         //hien thi layout
@@ -19,7 +28,7 @@ class C_Sach
         $m_sach = new M_sach();
 
         $ten_sach = $_REQUEST['ten_sach'];
-        $ma_tacgia = $_REQUEST['website'];
+        $ma_tacgia = $_REQUEST['ma_tacgia'];
         $ma_theloai = $_REQUEST['ma_theloai'];
         $ma_nxb = $_REQUEST['ma_nxb'];
         $nam_xuatban = $_REQUEST['nam_xuatban'];
@@ -35,7 +44,7 @@ class C_Sach
         $m_sach = new M_sach();
 
         $ten_sach = $_REQUEST['ten_sach'];
-        $ma_tacgia = $_REQUEST['website'];
+        $ma_tacgia = $_REQUEST['ma_tacgia'];
         $ma_theloai = $_REQUEST['ma_theloai'];
         $ma_nxb = $_REQUEST['ma_nxb'];
         $nam_xuatban = $_REQUEST['nam_xuatban'];
@@ -69,8 +78,15 @@ class C_Sach
 
         $arr_data = $m_sach->Doc_Sach_Theo_Id($id);
 
+        $tacgia = $m_sach->Danh_Sach_Tac_Gia();
+        $theloai = $m_sach->Danh_Sach_The_Loai();
+        $nxb = $m_sach->Danh_Sach_NXB();
+
         //Gui gia tri len view
         $smarty->assign('arr', $arr_data);
+        $smarty->assign('tacgia', $tacgia);
+        $smarty->assign('theloai', $theloai);
+        $smarty->assign('nxb', $nxb);
         $smarty->assign('title', 'Sách');
         $smarty->assign('view', 'views/sach/V_sua_sach.tpl');
 

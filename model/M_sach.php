@@ -1,5 +1,6 @@
 <?php
 include("database.php");
+include ("controllers/Hinhanh.php");
 
 class M_sach extends Database
 {
@@ -21,9 +22,21 @@ class M_sach extends Database
         return $this->getData($sql);
     }
 
+    function Doc_Tac_Gia_Theo_Id($id)
+    {
+        $sql = "select * from tacgia where id='$id'";
+        return $this->getData($sql);
+    }
+
     function Danh_Sach_The_Loai()
     {
         $sql = "select * from theloai";
+        return $this->getData($sql);
+    }
+
+    function Doc_The_Loai_Theo_Id($id)
+    {
+        $sql = "select * from theloai where id='$id'";
         return $this->getData($sql);
     }
 
@@ -33,9 +46,17 @@ class M_sach extends Database
         return $this->getData($sql);
     }
 
+    function Doc_NXB_Theo_Id($id)
+    {
+        $sql = "select * from nhaxuatban where id='$id'";
+        return $this->getData($sql);
+    }
+
     function Them($ten_sach, $ma_tacgia, $ma_theloai, $ma_nxb, $nam_xuatban, $ghi_chu)
     {
-        $sql = "Insert Into sach(id,ten_sach,ma_tacgia,ma_theloai,ma_nxb,nam_xuatban,images,ghi_chu) values ( NULL ,'$ten_sach', '$ma_tacgia','$ma_theloai','$ma_nxb','$nam_xuatban','$ghi_chu')";
+        $upload = new Hinhanh();
+        $images = $upload->upload();
+        $sql = "Insert Into sach(id,ten_sach,ma_tacgia,ma_theloai,ma_nxb,nam_xuatban,images,ghi_chu) values ( NULL ,'$ten_sach', '$ma_tacgia','$ma_theloai','$ma_nxb','$nam_xuatban','$images','$ghi_chu')";
         return $this->exe($sql);
     }
 

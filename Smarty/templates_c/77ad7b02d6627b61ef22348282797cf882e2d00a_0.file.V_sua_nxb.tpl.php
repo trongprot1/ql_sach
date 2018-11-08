@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-08 11:50:05
-  from 'F:\ql_sach\views\tac_gia\V_sua_tac_gia.tpl' */
+/* Smarty version 3.1.33, created on 2018-11-08 11:49:23
+  from 'F:\ql_sach\views\nxb\V_sua_nxb.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be422eddabe17_48845975',
+  'unifunc' => 'content_5be422c33cac77_74517429',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '7daa36c2f60acce7e7fc8f5b479f8c7a31a5be33' => 
+    '77ad7b02d6627b61ef22348282797cf882e2d00a' => 
     array (
-      0 => 'F:\\ql_sach\\views\\tac_gia\\V_sua_tac_gia.tpl',
-      1 => 1541677803,
+      0 => 'F:\\ql_sach\\views\\nxb\\V_sua_nxb.tpl',
+      1 => 1541677762,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be422eddabe17_48845975 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be422c33cac77_74517429 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
@@ -37,20 +37,28 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <small class="category"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
 </small>
             </h4>
-            <form action="/tacgia.php/?action=capnhat&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+            <form action="/nxb.php/?action=capnhat&id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
 " method="post" enctype="multipart/form-data">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="form-group label-floating">
-                            <label class="control-label">Tên Tác Giả</label>
-                            <input name="ten_tacgia" value="<?php echo $_smarty_tpl->tpl_vars['item']->value['ten_tacgia'] ? $_smarty_tpl->tpl_vars['item']->value['ten_tacgia'] : '';?>
+                            <label class="control-label">Tên Nhà Xuất Bản</label>
+                            <input name="ten_nxb" value="<?php echo $_smarty_tpl->tpl_vars['item']->value['ten_nxb'] ? $_smarty_tpl->tpl_vars['item']->value['ten_nxb'] : '';?>
 " type="text" class="form-control">
                         </div>
-                    </div>
-                    <div class="col-md-4">
+                    </div><div class="col-md-4">
                         <div class="form-group label-floating">
-                            <label class="control-label">Website</label>
-                            <input name="website" value="<?php echo $_smarty_tpl->tpl_vars['item']->value['website'] ? $_smarty_tpl->tpl_vars['item']->value['website'] : '';?>
+                            <label class="control-label">Email</label>
+                            <input name="email" value="<?php echo $_smarty_tpl->tpl_vars['item']->value['email'] ? $_smarty_tpl->tpl_vars['item']->value['email'] : '';?>
+" type="email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group label-floating">
+                            <label class="control-label">Địa Chỉ</label>
+                            <input name="dia_chi" value="<?php echo $_smarty_tpl->tpl_vars['item']->value['dia_chi'] ? $_smarty_tpl->tpl_vars['item']->value['dia_chi'] : '';?>
 " type="text" class="form-control">
                         </div>
                     </div>
@@ -58,16 +66,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>Ghi Chú</label>
+                            <label>Thông Tin</label>
                             <div class="form-group label-floating">
                                 <label class="control-label"></label>
-                                <textarea name="ghi_chu" class="form-control" rows="15"><?php echo $_smarty_tpl->tpl_vars['item']->value['ghichu'] ? $_smarty_tpl->tpl_vars['item']->value['ghichu'] : '';?>
+                                <textarea name="thong_tin" class="form-control" rows="15"><?php echo $_smarty_tpl->tpl_vars['item']->value['thong_tin'] ? $_smarty_tpl->tpl_vars['item']->value['thong_tin'] : '';?>
 </textarea>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="/tacgia.php" class="btn btn-primary">Quay Lại<div class="ripple-container"></div></a>
+                <a href="/nxb.php" class="btn btn-primary">Quay Lại<div class="ripple-container"></div></a>
                 <button type="submit" class="btn btn-rose pull-right">Cập Nhật</button>
                 <div class="clearfix"></div>
             </form>
