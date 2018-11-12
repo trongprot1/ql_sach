@@ -15,6 +15,7 @@
                         <tr>
                             <th>Id</th>
                             <th>Tên Đọc Giả</th>
+                            <th>Email</th>
                             <th>Phái</th>
                             <th>Ngày Sinh>
                             <th>Địa Chỉ</th>
@@ -29,7 +30,8 @@
                             <tr>
                                 <td>{$item['id']}</td>
                                 <td><strong>{$item['ten_docgia']}</strong></td>
-                                <td>{$item['phai']}</td>
+                                <td>{$item['email']}</td>
+                                <td>{($item['phai'] == 1)?"Nữ":"Nam"}</td>
                                 <td>{$item['ngay_sinh']}</td>
                                 <td>{$item['diachi']}</td>
                                 <td>{$item['so_dienthoai']}</td>

@@ -8,12 +8,12 @@
                 <h4 class="card-title">Thêm Mới -
                     <small class="category">{$title}</small>
                 </h4>
-                <form action="/nhanvien.php/?action=themmoi" method="post" enctype="multipart/form-data">
+                <form action="/docgia.php/?action=themmoi" method="post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-5">
                             <div class="form-group label-floating">
-                                <label class="control-label">Tên Nhân Viên</label>
-                                <input name="ten_nhan_vien" type="text" class="form-control">
+                                <label class="control-label">Tên Đọc Giả</label>
+                                <input name="ten_docgia" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -39,15 +39,21 @@
                         <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Số Điện Thoại</label>
-                                <input name="dien_thoai" type="text" class="form-control">
+                                <input name="so_dienthoai" type="text" class="form-control">
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Địa Chỉ</label>
                                 <input name="dia_chi" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Số Thẻ Thư Viện</label>
+                                <input name="so_the" type="text" class="form-control">
                             </div>
                         </div>
                     </div>
@@ -80,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="/nhanvien.php" class="btn btn-primary">Quay Lại<div class="ripple-container"></div></a>
+                    <a href="/docgia.php" class="btn btn-primary">Quay Lại<div class="ripple-container"></div></a>
                     <button type="submit" class="btn btn-rose pull-right">Thêm Mới</button>
                     <div class="clearfix"></div>
                 </form>

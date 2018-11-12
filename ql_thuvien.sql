@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th10 08, 2018 lúc 05:54 PM
+-- Thời gian đã tạo: Th10 12, 2018 lúc 05:43 PM
 -- Phiên bản máy phục vụ: 5.7.23
 -- Phiên bản PHP: 5.6.38
 
@@ -48,15 +48,23 @@ DROP TABLE IF EXISTS `docgia`;
 CREATE TABLE IF NOT EXISTS `docgia` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `ten_docgia` varchar(255) NOT NULL,
-  `phai` int(11) NOT NULL,
-  `ngay_sinh` varchar(255) NOT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `phai` int(11) DEFAULT NULL,
+  `ngay_sinh` varchar(255) DEFAULT NULL,
   `images` varchar(255) DEFAULT NULL,
   `diachi` varchar(255) DEFAULT NULL,
-  `so_dienthoai` varchar(255) NOT NULL,
-  `so_the` int(11) NOT NULL,
+  `so_dienthoai` varchar(255) DEFAULT NULL,
+  `so_the` varchar(11) DEFAULT NULL,
   `ghi_chu` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `docgia`
+--
+
+INSERT INTO `docgia` (`id`, `ten_docgia`, `email`, `phai`, `ngay_sinh`, `images`, `diachi`, `so_dienthoai`, `so_the`, `ghi_chu`) VALUES
+(1, 'Nguyễn Văn Tèo', 'trongnguyen@asiantechhub.com', 0, '10/10/1993', 'upload/44717948_2312054872406678_5642637895006158848_o.jpg', '184/38/49/72 Âu Dương Lân , Phường 3, Quận 8, Tp.HCM', '01698991355', '000001', 'asd');
 
 -- --------------------------------------------------------
 
@@ -69,9 +77,22 @@ CREATE TABLE IF NOT EXISTS `muon_tra` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `so_the` varchar(255) NOT NULL,
   `ma_nhanvien` int(11) NOT NULL,
+  `ma_sach` int(11) NOT NULL,
   `ngay_muon` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `muon_tra`
+--
+
+INSERT INTO `muon_tra` (`id`, `so_the`, `ma_nhanvien`, `ma_sach`, `ngay_muon`) VALUES
+(1, '000001', 1, 2, '10/10/2018 12:00 AM'),
+(2, '000001', 1, 2, '10/10/2018'),
+(3, '000001', 1, 1, '10/10/2018'),
+(4, '000001', 1, 2, '10/10/2018'),
+(5, '000001', 1, 4, '10/10/2018'),
+(6, '000001', 1, 5, '10/10/2018');
 
 -- --------------------------------------------------------
 
@@ -103,9 +124,9 @@ DROP TABLE IF EXISTS `nhaxuatban`;
 CREATE TABLE IF NOT EXISTS `nhaxuatban` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `ten_nxb` varchar(255) NOT NULL,
-  `dia_chi` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `thong_tin` text NOT NULL,
+  `dia_chi` varchar(255) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `thong_tin` text,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
@@ -128,13 +149,13 @@ INSERT INTO `nhaxuatban` (`id`, `ten_nxb`, `dia_chi`, `email`, `thong_tin`) VALU
 DROP TABLE IF EXISTS `sach`;
 CREATE TABLE IF NOT EXISTS `sach` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `ten_sach` varchar(255) NOT NULL,
-  `ma_tacgia` varchar(255) NOT NULL,
-  `ma_theloai` varchar(255) NOT NULL,
-  `ma_nxb` varchar(255) NOT NULL,
-  `nam_xuatban` varchar(255) NOT NULL,
-  `images` varchar(255) NOT NULL,
-  `ghi_chu` text NOT NULL,
+  `ten_sach` varchar(255) DEFAULT NULL,
+  `ma_tacgia` varchar(255) DEFAULT NULL,
+  `ma_theloai` varchar(255) DEFAULT NULL,
+  `ma_nxb` varchar(255) DEFAULT NULL,
+  `nam_xuatban` varchar(255) DEFAULT NULL,
+  `images` varchar(255) DEFAULT NULL,
+  `ghi_chu` text,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
@@ -158,9 +179,9 @@ INSERT INTO `sach` (`id`, `ten_sach`, `ma_tacgia`, `ma_theloai`, `ma_nxb`, `nam_
 DROP TABLE IF EXISTS `tacgia`;
 CREATE TABLE IF NOT EXISTS `tacgia` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `ten_tacgia` varchar(255) NOT NULL,
-  `website` varchar(255) NOT NULL,
-  `ghichu` text NOT NULL,
+  `ten_tacgia` varchar(255) DEFAULT NULL,
+  `website` varchar(255) DEFAULT NULL,
+  `ghichu` text,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 

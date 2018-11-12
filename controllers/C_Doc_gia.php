@@ -19,14 +19,15 @@ class C_Doc_gia
         $m_doc_gia = new M_doc_gia();
 
         $ten_docgia = $_REQUEST['ten_docgia'];
+        $email=$_REQUEST['email'];
         $phai = $_REQUEST['phai'];
         $ngay_sinh = $_REQUEST['ngay_sinh'];
-        $diachi = $_REQUEST['diachi'];
+        $diachi = $_REQUEST['dia_chi'];
         $so_dienthoai = $_REQUEST['so_dienthoai'];
         $so_the = $_REQUEST['so_the'];
         $ghi_chu = $_REQUEST['ghi_chu'];
 
-        $m_doc_gia->Them($ten_docgia, $phai, $ngay_sinh, $diachi, $so_dienthoai, $so_the, $ghi_chu);
+        $m_doc_gia->Them($ten_docgia,$email, $phai, $ngay_sinh, $diachi, $so_dienthoai, $so_the, $ghi_chu);
 
         header('Location:/docgia.php');
     }
@@ -36,14 +37,15 @@ class C_Doc_gia
         $m_doc_gia = new M_doc_gia();
 
         $ten_docgia = $_REQUEST['ten_docgia'];
+        $email=$_REQUEST['email'];
         $phai = $_REQUEST['phai'];
         $ngay_sinh = $_REQUEST['ngay_sinh'];
-        $diachi = $_REQUEST['diachi'];
+        $diachi = $_REQUEST['dia_chi'];
         $so_dienthoai = $_REQUEST['so_dienthoai'];
         $so_the = $_REQUEST['so_the'];
         $ghi_chu = $_REQUEST['ghi_chu'];
 
-        $m_doc_gia->Sua($ten_docgia, $phai, $ngay_sinh, $diachi, $so_dienthoai, $so_the, $ghi_chu, $id);
+        $m_doc_gia->Sua($ten_docgia,$email, $phai, $ngay_sinh, $diachi, $so_dienthoai, $so_the, $ghi_chu, $id);
 
         header('Location:/docgia.php');
     }

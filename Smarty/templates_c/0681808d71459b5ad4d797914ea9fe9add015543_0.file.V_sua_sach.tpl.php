@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-08 15:38:58
+/* Smarty version 3.1.33, created on 2018-11-12 14:53:17
   from 'E:\QL Sach\views\sach\V_sua_sach.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be458924f8fa7_93541828',
+  'unifunc' => 'content_5be993dd703095_32119768',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0681808d71459b5ad4d797914ea9fe9add015543' => 
     array (
       0 => 'E:\\QL Sach\\views\\sach\\V_sua_sach.tpl',
-      1 => 1541684268,
+      1 => 1542034396,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be458924f8fa7_93541828 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be993dd703095_32119768 (Smarty_Internal_Template $_smarty_tpl) {
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
@@ -47,33 +47,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Năm Xuất Bản</label>
                                 <input name="nam_xuatban" value="<?php echo $_smarty_tpl->tpl_vars['item']->value['nam_xuatban'] ? $_smarty_tpl->tpl_vars['item']->value['nam_xuatban'] : '';?>
 " type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <select name="ma_nxb" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Nhà Xuất Bản" data-size="7">
-                                <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['nxb']->value, 'list_nxb');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['list_nxb']->value) {
-?>
-                                    <option value="<?php echo $_smarty_tpl->tpl_vars['list_nxb']->value['id'];?>
-" <?php echo $_smarty_tpl->tpl_vars['list_nxb']->value['id'] == $_smarty_tpl->tpl_vars['item']->value['ma_nxb'] ? "selected" : '';?>
- ><?php echo $_smarty_tpl->tpl_vars['list_nxb']->value['ten_nxb'];?>
-</option>
-                                <?php
-}
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                            </select>
-                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <select name="ma_tacgia" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Tác Giả" data-size="7">
                                 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['tacgia']->value, 'list_tacgia');
@@ -90,7 +73,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['list_tacgia']->value) {
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                             </select>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <select name="ma_theloai" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Thể Loại" data-size="7">
                                 <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['theloai']->value, 'list_theloai');
@@ -100,6 +83,23 @@ foreach ($_from as $_smarty_tpl->tpl_vars['list_theloai']->value) {
                                     <option value="<?php echo $_smarty_tpl->tpl_vars['list_theloai']->value['id'];?>
 " <?php echo $_smarty_tpl->tpl_vars['list_theloai']->value['id'] == $_smarty_tpl->tpl_vars['item']->value['ma_theloai'] ? "selected" : '';?>
 ><?php echo $_smarty_tpl->tpl_vars['list_theloai']->value['ten_theloai'];?>
+</option>
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="ma_nxb" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Nhà Xuất Bản" data-size="7">
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['nxb']->value, 'list_nxb');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['list_nxb']->value) {
+?>
+                                    <option value="<?php echo $_smarty_tpl->tpl_vars['list_nxb']->value['id'];?>
+" <?php echo $_smarty_tpl->tpl_vars['list_nxb']->value['id'] == $_smarty_tpl->tpl_vars['item']->value['ma_nxb'] ? "selected" : '';?>
+ ><?php echo $_smarty_tpl->tpl_vars['list_nxb']->value['ten_nxb'];?>
 </option>
                                 <?php
 }
@@ -166,8 +166,5 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             </div>
         </div>
     </div>
-</div>
-
-<?php echo var_dump($_smarty_tpl->tpl_vars['arr']->value);
-}
+</div><?php }
 }

@@ -18,32 +18,32 @@
                                 <input name="ten_sach" value="{($item['ten_sach'])?$item['ten_sach']:""}" type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Năm Xuất Bản</label>
                                 <input name="nam_xuatban" value="{($item['nam_xuatban'])?$item['nam_xuatban']:""}" type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <select name="ma_nxb" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Nhà Xuất Bản" data-size="7">
-                                {foreach $nxb as $list_nxb}
-                                    <option value="{$list_nxb['id']}" {($list_nxb['id'] == $item['ma_nxb'])?"selected":""} >{$list_nxb['ten_nxb']}</option>
-                                {/foreach}
-                            </select>
-                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <select name="ma_tacgia" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Tác Giả" data-size="7">
                                 {foreach $tacgia as $list_tacgia}
                                     <option value="{$list_tacgia['id']}" {($list_tacgia['id'] == $item['ma_tacgia'])?"selected":""} >{$list_tacgia['ten_tacgia']}</option>
                                 {/foreach}
                             </select>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <select name="ma_theloai" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Thể Loại" data-size="7">
                                 {foreach $theloai as $list_theloai}
                                     <option value="{$list_theloai['id']}" {($list_theloai['id'] == $item['ma_theloai'])?"selected":""}>{$list_theloai['ten_theloai']}</option>
+                                {/foreach}
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select name="ma_nxb" class="selectpicker" data-style="btn btn-primary btn-round" title="Chọn Nhà Xuất Bản" data-size="7">
+                                {foreach $nxb as $list_nxb}
+                                    <option value="{$list_nxb['id']}" {($list_nxb['id'] == $item['ma_nxb'])?"selected":""} >{$list_nxb['ten_nxb']}</option>
                                 {/foreach}
                             </select>
                         </div>

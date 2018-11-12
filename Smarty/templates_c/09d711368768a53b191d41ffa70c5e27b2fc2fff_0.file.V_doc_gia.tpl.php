@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-11-08 17:53:28
+/* Smarty version 3.1.33, created on 2018-11-10 12:55:47
   from 'E:\QL Sach\views\doc_gia\V_doc_gia.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5be47818daaf35_63721077',
+  'unifunc' => 'content_5be6d553798fc7_27854230',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '09d711368768a53b191d41ffa70c5e27b2fc2fff' => 
     array (
       0 => 'E:\\QL Sach\\views\\doc_gia\\V_doc_gia.tpl',
-      1 => 1541699607,
+      1 => 1541854305,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5be47818daaf35_63721077 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5be6d553798fc7_27854230 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -39,6 +39,7 @@ function content_5be47818daaf35_63721077 (Smarty_Internal_Template $_smarty_tpl)
                         <tr>
                             <th>Id</th>
                             <th>Tên Đọc Giả</th>
+                            <th>Email</th>
                             <th>Phái</th>
                             <th>Ngày Sinh>
                             <th>Địa Chỉ</th>
@@ -59,7 +60,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 </td>
                                 <td><strong><?php echo $_smarty_tpl->tpl_vars['item']->value['ten_docgia'];?>
 </strong></td>
-                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['phai'];?>
+                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['email'];?>
+</td>
+                                <td><?php echo $_smarty_tpl->tpl_vars['item']->value['phai'] == 1 ? "Nữ" : "Nam";?>
 </td>
                                 <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ngay_sinh'];?>
 </td>
