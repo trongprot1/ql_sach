@@ -1,11 +1,35 @@
-<div class="col-md-12">
+<?php
+/* Smarty version 3.1.33, created on 2018-11-14 11:30:42
+  from 'F:\ql_sach\views\muon_tra\V_them_muon_tra.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5bec076242c179_21158926',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '15ba00da848f2313db6ebb9734ec0825e2f1d14d' => 
+    array (
+      0 => 'F:\\ql_sach\\views\\muon_tra\\V_them_muon_tra.tpl',
+      1 => 1542193153,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5bec076242c179_21158926 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="col-md-12">
     <div class="card">
         <div class="card-header card-header-icon" data-background-color="rose">
             <i class="material-icons">perm_identity</i>
         </div>
         <div class="card-content">
             <h4 class="card-title">Thêm Mới -
-                <small class="category">{$title}</small>
+                <small class="category"><?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+</small>
             </h4>
             <form action="/muontra.php/?action=themmoi" method="post" enctype="multipart/form-data">
                 <div class="row">
@@ -50,20 +74,36 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                {foreach $arr as $item}
+                                <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['arr']->value, 'item');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+?>
 
                                     <tr>
-                                        <td><input name="ma_sach" value="{$item['id']}" type="radio" class="form-control"></td>
-                                        <td>{$item['id']}</td>
-                                        <td><strong>{$item['ten_sach']}</strong></td>
-                                        <td>{$item['ma_tacgia']}</td>
-                                        <td>{$item['ma_theloai']}</td>
-                                        <td>{$item['ma_nxb']}</td>
-                                        <td>{$item['nam_xuatban']}</td>
-                                        <td><img src="../{$item['images']}" style="width: 150px;height: 150px"></td>
-                                        <td>{mb_strimwidth($item['ghi_chu'], 0, 100, '...')}</td>
+                                        <td><input name="ma_sach" value="<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+" type="radio" class="form-control"></td>
+                                        <td><?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
+</td>
+                                        <td><strong><?php echo $_smarty_tpl->tpl_vars['item']->value['ten_sach'];?>
+</strong></td>
+                                        <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ma_tacgia'];?>
+</td>
+                                        <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ma_theloai'];?>
+</td>
+                                        <td><?php echo $_smarty_tpl->tpl_vars['item']->value['ma_nxb'];?>
+</td>
+                                        <td><?php echo $_smarty_tpl->tpl_vars['item']->value['nam_xuatban'];?>
+</td>
+                                        <td><img src="../<?php echo $_smarty_tpl->tpl_vars['item']->value['images'];?>
+" style="width: 150px;height: 150px"></td>
+                                        <td><?php echo mb_strimwidth($_smarty_tpl->tpl_vars['item']->value['ghi_chu'],0,100,'...');?>
+</td>
                                     </tr>
-                                {/foreach}
+                                <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                                 </tbody>
                             </table>
                         </div>
@@ -75,4 +115,5 @@
             </form>
         </div>
     </div>
-</div>
+</div><?php }
+}

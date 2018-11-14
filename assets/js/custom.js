@@ -1,4 +1,5 @@
 $('.datetimepicker').datetimepicker({
+    format: 'DD/MM/YYYY h:mm A',
     icons: {
         time: "fa fa-clock-o",
         date: "fa fa-calendar",
@@ -83,3 +84,15 @@ $(document).ready(function() {
 
     $('.card .material-datatables label').addClass('form-group');
 });
+$("#da_tra").on('change',function () {
+
+    var value = $(this).val()
+    if(value === '1'){
+        $('#muontra').show()
+    }else {
+        $("#muontra").hide();
+    }
+});
+if($("#da_tra").val() === "1"){
+    $('#muontra').show()
+}

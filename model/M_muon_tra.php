@@ -1,5 +1,5 @@
 <?php
-include("database.php");
+include_once("database.php");
 
 class M_muon_tra extends Database
 {
@@ -20,12 +20,15 @@ class M_muon_tra extends Database
         $sql = "Insert Into muon_tra(id,so_the,ma_nhanvien,ma_sach,ngay_muon) values ( NULL ,'$so_the', '$ma_nhanvien','$ma_sach','$ngay_muon')";
         return $this->exe($sql);
     }
-    function Them_CT_Muon_Tra($ma_muontra, $ma_sach,$ghi_chu,$da_tra, $ngay_tra)
-    {
-        $sql = "Insert Into muon_tra(id,so_the,ma_nhanvien,ma_sach,ngay_muon) values ( NULL ,'$ma_muontra', '$ma_sach','$ghi_chu','$da_tra','$ngay_tra')";
-        return $this->exe($sql);
-    }
+    function Them_CT_Muon_Tra($muontra){
+        foreach ($muontra as $mt){
+            $ma_muontra = $mt['id'];
+            $ma_sach = $mt['ma_sach'];
 
+            $sql = "Insert Into ct_muontra(id,ma_muontra,ma_sach,ghi_chu,da_tra,ngay_tra) values ( NULL ,'$ma_muontra', '$ma_sach',NULL ,'0',NULL )";
+            return $this->exe($sql);
+        }
+    }
     function Sua($so_the, $ma_nhanvien,$ma_sach, $ngay_muon, $id)
     {
         $sql = "Update muon_tra SET so_the='$so_the', ma_nhanvien = '$ma_nhanvien',ma_sach='$ma_sach',ngay_muon='$ngay_muon' WHERE id=$id";
@@ -46,6 +49,11 @@ class M_muon_tra extends Database
     function Doc_Sach_Theo_Id($id)
     {
         $sql = "select * from sach where id='$id'";
+        return $this->getData($sql);
+    }
+
+    function Get_Lastet_Record(){
+        $sql = "SELECT * FROM muon_tra ORDER BY id DESC LIMIT 1";
         return $this->getData($sql);
     }
 }

@@ -26,10 +26,11 @@ class C_Muon_Tra
         $ma_nhanvien = $_REQUEST['ma_nhanvien'];
         $ma_sach = $_REQUEST['ma_sach'];
         $ngay_muon = $_REQUEST['ngay_muon'];
+        $m_muon_tra->Them($so_the, $ma_nhanvien, $ma_sach, $ngay_muon);
 
-        foreach($ma_sach as $item){
-            $m_muon_tra->Them($so_the, $ma_nhanvien, $item, $ngay_muon);
-        }
+        $muon_tra = $m_muon_tra->Get_Lastet_Record();
+
+        $m_muon_tra->Them_CT_Muon_Tra($muon_tra);
 
         header('Location:/muontra.php');
     }

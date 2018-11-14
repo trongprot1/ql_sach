@@ -14,7 +14,7 @@
                         <thead>
                         <tr>
                             <th>Id</th>
-                            <th>Số Thẻ</th>
+                            <th>Số Thẻ Thư Viện</th>
                             <th>Mã Nhân Viên</th>
                             <th>Mã Sách</th>
                             <th>Ngày Mượn</th>
@@ -30,7 +30,7 @@
                                 <td>{$item['ma_sach']}</td>
                                 <td>{$item['ngay_muon']}</td>
                                 <td class="text-right">
-                                    <a href="/muontra.php?action=xem&id={$item['id']}" class="btn btn-simple btn-info btn-icon like">Xem</a>
+                                    <a href="/muontra.php?action=xem&id={$item['id']}" class="btn btn-simple btn-info btn-icon view">Xem</a>
                                     <a href="/muontra.php?action=xoa&id={$item['id']}" class="btn btn-simple btn-danger btn-icon remove">Xoá</a>
                                 </td>
                             </tr>

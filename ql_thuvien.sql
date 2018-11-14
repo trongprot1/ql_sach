@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1:3306
--- Thời gian đã tạo: Th10 12, 2018 lúc 05:43 PM
--- Phiên bản máy phục vụ: 5.7.23
--- Phiên bản PHP: 5.6.38
+-- Thời gian đã tạo: Th10 14, 2018 lúc 12:17 PM
+-- Phiên bản máy phục vụ: 5.7.21
+-- Phiên bản PHP: 5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -30,13 +30,23 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `ct_muontra`;
 CREATE TABLE IF NOT EXISTS `ct_muontra` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `ma_muontra` int(11) NOT NULL,
   `ma_sach` int(11) NOT NULL,
-  `ghichu` text NOT NULL,
-  `da_tra` tinyint(4) NOT NULL,
-  `ngay_tra` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `ghi_chu` text,
+  `da_tra` int(11) NOT NULL,
+  `ngay_tra` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `ct_muontra`
+--
+
+INSERT INTO `ct_muontra` (`id`, `ma_muontra`, `ma_sach`, `ghi_chu`, `da_tra`, `ngay_tra`) VALUES
+(1, 7, 1, '', 1, '14/11/2018 12:00 AM'),
+(2, 11, 2, NULL, 0, NULL),
+(3, 12, 4, NULL, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -80,19 +90,18 @@ CREATE TABLE IF NOT EXISTS `muon_tra` (
   `ma_sach` int(11) NOT NULL,
   `ngay_muon` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 --
 -- Đang đổ dữ liệu cho bảng `muon_tra`
 --
 
 INSERT INTO `muon_tra` (`id`, `so_the`, `ma_nhanvien`, `ma_sach`, `ngay_muon`) VALUES
-(1, '000001', 1, 2, '10/10/2018 12:00 AM'),
-(2, '000001', 1, 2, '10/10/2018'),
-(3, '000001', 1, 1, '10/10/2018'),
-(4, '000001', 1, 2, '10/10/2018'),
-(5, '000001', 1, 4, '10/10/2018'),
-(6, '000001', 1, 5, '10/10/2018');
+(7, '000001', 1, 1, '10/10/2018 12:00 AM'),
+(9, '000001', 1, 1, '10/10/2018 12:00 AM'),
+(10, '000001', 1, 4, '10/10/2018 12:00 AM'),
+(11, '000001', 1, 2, '10/10/2018 12:00 AM'),
+(12, '000003', 1, 4, '10/10/2018 12:00 AM');
 
 -- --------------------------------------------------------
 
